@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TipToe Soles | Comfortable & Stylish Shoes</title>
-  <link rel="stylesheet" href="Style.css">
+
+  <!-- FIX: GitHub is case-sensitive (style.css not Style.css) -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -14,22 +16,25 @@
     <div class="header-container">
 
       <!-- Logo Only -->
-      <a href="Index.html" class="logo-link">
-        <img src="TipToeSoles_Logo_colour.png" alt="TipToe Soles Logo" class="logo">
+      <!-- FIX: index.html is lowercase on GitHub Pages -->
+      <a href="index.html" class="logo-link">
+        <!-- FIX: filename must match exactly. Using lowercase version. -->
+        <img src="tiptoesoles_logo_colour.png" alt="TipToe Soles Logo" class="logo">
       </a>
 
       <!-- Navigation -->
       <nav>
         <ul class="nav-list">
-          <li><a href="Index.html" class="nav-link active" aria-current="page">Home</a></li>
-          <li><a href="Products.html" class="nav-link">Products</a></li>
-          <li><a href="Services.html" class="nav-link">Services</a></li>
-          <li><a href="Wishlist.html" class="nav-link">Wishlist</a></li>
-          <li><a href="Feedback.html" class="nav-link">Feedback</a></li>
-          <li><a href="Policies.html" class="nav-link">Policies</a></li>
-          <li><a href="About.html" class="nav-link">About</a></li>
-          <li><a href="Contact.html" class="nav-link">Contact</a></li>
-          <li><a href="Login.html" class="nav-link">Login</a></li>
+          <!-- FIX: all links to lowercase filenames -->
+          <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="wishlist.html" class="nav-link">Wishlist</a></li>
+          <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+          <li><a href="policies.html" class="nav-link">Policies</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="login.html" class="nav-link">Login</a></li>
         </ul>
       </nav>
 
@@ -71,7 +76,8 @@
           We carefully select our products to provide a balance of cushioning,
           arch support and durable materials, so every step feels lighter.
         </p>
-        <a href="About.html" class="text-link">Learn more about us</a>
+        <!-- FIX: lowercase filename -->
+        <a href="about.html" class="text-link">Learn more about us</a>
       </div>
     </section>
 
@@ -88,7 +94,8 @@
 
           <!-- Product 1 -->
           <article class="product-card" role="listitem">
-            <img src="Clancy Blue.jpg" alt="Clancy Blue comfort shoe" class="product-image" />
+            <!-- FIX: match GitHub filename exactly (lowercase, no spaces) -->
+            <img src="clancyblue.jpg" alt="Clancy Blue comfort shoe" class="product-image" />
             <div class="product-info">
               <h3 class="product-name">Clancy Blue</h3>
               <p class="product-description">
@@ -101,7 +108,7 @@
 
           <!-- Product 2 -->
           <article class="product-card" role="listitem">
-            <img src="Gary Black.jpg" alt="Gary Black formal shoe" class="product-image" />
+            <img src="garyblack.jpg" alt="Gary Black formal shoe" class="product-image" />
             <div class="product-info">
               <h3 class="product-name">Gary Black</h3>
               <p class="product-description">
@@ -112,9 +119,9 @@
             </div>
           </article>
 
-          <!-- Product 3 (changed to Sally Tan) -->
+          <!-- Product 3 -->
           <article class="product-card" role="listitem">
-            <img src="Sally Tan.jpg" alt="Sally Tan casual shoe" class="product-image" />
+            <img src="sallytan.jpg" alt="Sally Tan casual shoe" class="product-image" />
             <div class="product-info">
               <h3 class="product-name">Sally Tan</h3>
               <p class="product-description">
