@@ -1,0 +1,9 @@
+{
+  "html.autoClosingTags": false,
+  "emmet.triggerExpansionOnTab": false,
+  "editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
+  }
+}

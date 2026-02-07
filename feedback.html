@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback | TipToe Soles</title>
+  <link rel="stylesheet" href="Style.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <a href="Index.html" class="logo-link">
+        <img src="TipToeSoles_Logo_colour.png" alt="TipToe Soles Logo" class="logo" />
+      </a>
+
+      <nav role="navigation" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="Index.html" class="nav-link">Home</a></li>
+          <li><a href="Products.html" class="nav-link">Products</a></li>
+          <li><a href="Services.html" class="nav-link">Services</a></li>
+          <li><a href="Wishlist.html" class="nav-link">Wishlist</a></li>
+          <li><a href="Feedback.html" class="nav-link active" aria-current="page">Feedback</a></li>
+          <li><a href="Policies.html" class="nav-link">Policies</a></li>
+          <li><a href="About.html" class="nav-link">About</a></li>
+          <li><a href="Contact.html" class="nav-link">Contact</a></li>
+          <li><a href="Login.html" class="nav-link">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main role="main">
+
+    <!-- Page Heading -->
+    <section class="page-heading" aria-labelledby="feedback-heading">
+      <div class="content-wrapper">
+        <h2 id="feedback-heading">Customer Feedback</h2>
+        <p>
+          We value your feedback and use it to improve the comfort, style and
+          fit of our footwear.
+        </p>
+      </div>
+    </section>
+
+    <!-- Feedback Content -->
+    <section class="contact-section" aria-label="Feedback form">
+      <div class="content-wrapper contact-layout">
+
+        <!-- Why feedback matters -->
+        <div class="contact-details">
+          <h3>Why your feedback matters</h3>
+          <p>
+            Feedback helps us understand which styles work best and where we can
+            improve. It also helps other customers choose shoes that meet their
+            needs.
+          </p>
+          <p>
+            You can share your experience with comfort, fit, staff service or
+            any suggestions for future products.
+          </p>
+        </div>
+
+        <!-- Feedback form -->
+        <div class="contact-form-wrapper">
+          <h3>Share your feedback</h3>
+
+          <form class="contact-form" action="#" method="post" aria-label="Feedback form">
+
+            <div class="form-group">
+              <label for="fb-name">Name</label>
+              <input type="text" id="fb-name" name="name" />
+            </div>
+
+            <div class="form-group">
+              <label for="fb-email">Email</label>
+              <input type="email" id="fb-email" name="email" />
+            </div>
+
+            <div class="form-group">
+              <label for="fb-rating">Overall Experience</label>
+              <select id="fb-rating" name="rating">
+                <option value="">Please select</option>
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="average">Average</option>
+                <option value="poor">Poor</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="fb-message">Comments</label>
+              <textarea id="fb-message" name="message" rows="5"></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary">Submit Feedback</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="footer-container">
+
+      <p>&copy; 2025 TipToe Soles. All rights reserved.</p>
+
+      <div class="footer-links">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+          <img src="facebook-icon.png" alt="Facebook" class="social-icon" />
+        </a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+          <img src="instagram-icon.png" alt="Instagram" class="social-icon" />
+        </a>
+        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+          <img src="xtwitter-icon.png" alt="Twitter / X" class="social-icon" />
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
