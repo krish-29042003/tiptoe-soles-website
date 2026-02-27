@@ -6,27 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TipToe Soles | Comfortable & Stylish Shoes</title>
 
-  <!-- FIX: GitHub is case-sensitive (style.css not Style.css) -->
+  <!-- FIX: keep the same stylesheet path you are using now -->
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<!-- FIX: add a top anchor id for the Home link (helps with “redundant link” in WAVE) -->
+<body id="top">
+
   <!-- Header -->
   <header>
     <div class="header-container">
 
       <!-- Logo Only -->
-      <!-- FIX: index.html is lowercase on GitHub Pages -->
       <a href="index.html" class="logo-link">
-        <!-- FIX: filename must match exactly. Using lowercase version. -->
         <img src="tiptoesoles_logo_colour.png" alt="TipToe Soles Logo" class="logo">
       </a>
 
       <!-- Navigation -->
-      <nav>
+      <nav aria-label="Main navigation">
         <ul class="nav-list">
-          <!-- FIX: all links to lowercase filenames -->
-          <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+          <!-- FIX: Home now points to index.html#top (not the exact same URL as the logo link) -->
+          <li><a href="index.html#top" class="nav-link active" aria-current="page">Home</a></li>
           <li><a href="products.html" class="nav-link">Products</a></li>
           <li><a href="services.html" class="nav-link">Services</a></li>
           <li><a href="wishlist.html" class="nav-link">Wishlist</a></li>
@@ -42,15 +42,17 @@
   </header>
 
   <!-- Main Content -->
-  <main role="main">
+  <main>
+    <!-- FIX: add an H1 for accessibility/structure without changing design (needs .sr-only in CSS) -->
+    <h1 class="sr-only">TipToe Soles</h1>
 
     <!-- HERO / INTRO SECTION -->
     <section class="hero" aria-labelledby="hero-heading">
       <div class="hero-content">
         <h2 id="hero-heading">Find your perfect fit with TipToe Soles</h2>
 
-        <!-- Tagline in Blue Banner -->
-        <p class="hero-tagline">Comfort in every step</p>
+        <!-- FIX: change to a real heading (WAVE “possible heading”), styling stays via same class -->
+        <h3 class="hero-tagline">Comfort in every step</h3>
 
         <p>
           At TipToe Soles, we specialise in high-quality, comfortable shoes designed
@@ -76,7 +78,6 @@
           We carefully select our products to provide a balance of cushioning,
           arch support and durable materials, so every step feels lighter.
         </p>
-        <!-- FIX: lowercase filename -->
         <a href="about.html" class="text-link">Learn more about us</a>
       </div>
     </section>
@@ -90,12 +91,13 @@
           support and modern design.
         </p>
 
-        <div class="product-grid" role="list">
+        <!-- FIX: remove role="list" (invalid on div) and let semantic elements do the work -->
+        <div class="product-grid">
 
           <!-- Product 1 -->
-          <article class="product-card" role="listitem">
-            <!-- FIX: match GitHub filename exactly (lowercase, no spaces) -->
-            <img src="clancyblue.jpg" alt="Clancy Blue comfort shoe" class="product-image" />
+          <article class="product-card">
+            <!-- FIX: remove trailing slash for HTML validator -->
+            <img src="clancyblue.jpg" alt="Clancy Blue comfort shoe" class="product-image">
             <div class="product-info">
               <h3 class="product-name">Clancy Blue</h3>
               <p class="product-description">
@@ -107,8 +109,8 @@
           </article>
 
           <!-- Product 2 -->
-          <article class="product-card" role="listitem">
-            <img src="garyblack.jpg" alt="Gary Black formal shoe" class="product-image" />
+          <article class="product-card">
+            <img src="garyblack.jpg" alt="Gary Black formal shoe" class="product-image">
             <div class="product-info">
               <h3 class="product-name">Gary Black</h3>
               <p class="product-description">
@@ -120,8 +122,8 @@
           </article>
 
           <!-- Product 3 -->
-          <article class="product-card" role="listitem">
-            <img src="sallytan.jpg" alt="Sally Tan casual shoe" class="product-image" />
+          <article class="product-card">
+            <img src="sallytan.jpg" alt="Sally Tan casual shoe" class="product-image">
             <div class="product-info">
               <h3 class="product-name">Sally Tan</h3>
               <p class="product-description">
@@ -138,20 +140,21 @@
   </main>
 
   <!-- Footer -->
-  <footer role="contentinfo">
+  <!-- FIX: remove role="contentinfo" (unnecessary warning in validator) -->
+  <footer>
     <div class="footer-container">
 
       <p>&copy; 2025 TipToe Soles. All rights reserved.</p>
 
       <div class="footer-links">
         <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-          <img src="facebook-icon.png" alt="Facebook" class="social-icon" />
+          <img src="facebook-icon.png" alt="Facebook" class="social-icon">
         </a>
         <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-          <img src="instagram-icon.png" alt="Instagram" class="social-icon" />
+          <img src="instagram-icon.png" alt="Instagram" class="social-icon">
         </a>
         <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-          <img src="xtwitter-icon.png" alt="Twitter / X" class="social-icon" />
+          <img src="xtwitter-icon.png" alt="Twitter / X" class="social-icon">
         </a>
       </div>
 
@@ -160,4 +163,3 @@
 
 </body>
 </html>
-
