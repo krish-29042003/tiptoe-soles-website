@@ -7,12 +7,18 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body id="top">
+<body>
+  <!-- Top anchor to avoid "redundant link" (logo + Home going to same URL) -->
+  <div id="top"></div>
+
+  <!-- Skip link (good accessibility, doesn’t affect design) -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <!-- Header -->
   <header>
     <div class="header-container">
 
-      <!-- Logo -->
+      <!-- Logo (goes to #top so it is NOT the same URL as the Home link) -->
       <a href="#top" class="logo-link" aria-label="Back to top">
         <img src="tiptoesoles_logo_colour.png" alt="TipToe Soles Logo" class="logo">
       </a>
@@ -36,12 +42,18 @@
   </header>
 
   <!-- Main Content -->
-  <main>
+  <main id="main-content">
 
-    <!-- HERO -->
+    <!-- H1 added (WAVE wants a first-level heading).
+         This is visually hidden so your design stays the same. -->
+    <h1 class="sr-only">TipToe Soles</h1>
+
+    <!-- HERO / INTRO SECTION -->
     <section class="hero" aria-labelledby="hero-heading">
       <div class="hero-content">
         <h2 id="hero-heading">Find your perfect fit with TipToe Soles</h2>
+
+        <!-- Keep this as a paragraph (NOT a heading) to avoid “possible heading” -->
         <p class="hero-tagline">Comfort in every step</p>
 
         <p>
@@ -83,6 +95,7 @@
 
         <div class="product-grid">
 
+          <!-- Product 1 -->
           <article class="product-card">
             <img src="clancyblue.jpg" alt="Clancy Blue comfort shoe" class="product-image">
             <div class="product-info">
@@ -91,10 +104,12 @@
                 A stylish, lightweight shoe designed for all-day comfort with a
                 soft insole and flexible sole.
               </p>
-              <p class="product-price">$129.95</p>
+              <!-- Add context so WAVE is less likely to think this is a “heading” -->
+              <p class="product-price"><span class="sr-only">Price: </span>$129.95</p>
             </div>
           </article>
 
+          <!-- Product 2 -->
           <article class="product-card">
             <img src="garyblack.jpg" alt="Gary Black formal shoe" class="product-image">
             <div class="product-info">
@@ -103,10 +118,11 @@
                 A sleek, supportive dress shoe perfect for office wear or special
                 occasions.
               </p>
-              <p class="product-price">$149.95</p>
+              <p class="product-price"><span class="sr-only">Price: </span>$149.95</p>
             </div>
           </article>
 
+          <!-- Product 3 -->
           <article class="product-card">
             <img src="sallytan.jpg" alt="Sally Tan casual shoe" class="product-image">
             <div class="product-info">
@@ -115,7 +131,7 @@
                 A versatile casual shoe with soft lining and cushioning for
                 everyday activities and weekend outings.
               </p>
-              <p class="product-price">$139.95</p>
+              <p class="product-price"><span class="sr-only">Price: </span>$139.95</p>
             </div>
           </article>
 
@@ -129,10 +145,10 @@
   <footer>
     <div class="footer-container">
 
-      <!-- FIX: Utility links are NOT redundant anymore (different anchors) -->
-      <p>
+      <!-- Keep footer links high contrast (CSS below forces white) -->
+      <p class="footer-utility">
         <a href="policies.html#returns">Return &amp; Exchange Policy</a>
-        &nbsp;|&nbsp;
+        <span aria-hidden="true"> | </span>
         <a href="policies.html#delivery">Delivery Policy</a>
       </p>
 
